@@ -1,0 +1,8 @@
+一、解决mysql中文乱码
+   1、在sql文件顶部设置默认编码
+        set names utf8;
+   2、建库的时候设置编码为utf8
+     如:create database xxx chargset utf8;
+   3、打开一个cmd 登陆mysql 导入sql文件
+     source xxx.sql
+   4、新开另一个cmd 登陆mysql1 查询
